@@ -1,19 +1,20 @@
 <template>
     <section class="products-container">
         <div v-for="item in data" :key="item.id" class="div-products">
-        <img src="https://www.folhavitoria.com.br/entretenimento/blogs/du-ponto-de-vista-masculino/wp-content/uploads/2016/05/camiseta-adidas-clima-training-masculina-img.jpg" 
-        alt="">
-        <h3 id="category">{{item.category}}</h3>
-        <h1 id="title">
-            {{item.title}}
-        </h1>
-        <h4 id="price">R$ {{item.price}}</h4>
-        <!-- <p>{{item.description}}</p> -->
+            
+                <img :src=item.image />
+                <!-- <h3 id="category">{{item.category}}</h3> -->
+                <h1 id="title">
+                    {{item.title}}
+                </h1>
+                <h4 id="price">R$ {{item.price}}</h4>
+                <Button/>
     </div>
     </section>
 </template>
 
 <script>
+import Button from './Button.vue'
 export default {
     name:"Products",
     data(){
@@ -42,18 +43,18 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 100%;
 }
+
 .div-products{
     width: 300px;
-    height: 500px;
-    margin: auto;
-    margin-bottom: 50px;
-    border: 1px solid #222;
-    
+    height: 300px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 5px hsl(0deg 0% 0% );
+    border-radius:10px;
+   
 }
 .products-container img{
-    width: 100%;
+    width: 100px;
 }
 .products-container #category{
     color:#222;

@@ -1,19 +1,18 @@
 # loja-vue
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+## Para iniciar o projeto
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
+### Para iniciar o backend
 ```
-npm run build
+npm run backend
 ```
+Esse comando serve para simular o backend da aplicação.Cada chamada do evento comprar
+o produto é enviado para essa api que simula o backend.
+### Considerações
+Percebe-se que quando de clica no button comprar sempre se 
+adiciona o mesmo dado na aba pedidos, pois não consegui identificar uma forma
+de pegar esses dados de forma dinamica para tal.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+

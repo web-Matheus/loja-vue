@@ -8,9 +8,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/carrinho',
-    name: 'carrinho',
-    component: () => import(/* webpackChunkName: "about" */ '../views/CarrinhoView.vue')
+    path: '/pedidos',
+    name: 'pedidos',
+    component:()=> import('../views/pedidosView.vue')
   },
   {
     path:'/masculino',
@@ -26,6 +26,10 @@ const routes = [
     path:'/joias',
     name:'joias',
     component: () => import('../views/joias.vue')
+  },
+  {
+    path:'/joias',
+    component:()=> import('../views/joias.vue')
   },
   {
     path:'/eletronicos',

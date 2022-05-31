@@ -1,7 +1,5 @@
 <template>
   <section class="main-container">
-    <h1>Home view loja</h1>
-    <!-- aqui eu importo os outros components -->
     <Products/>
    <Footer/>
   </section>
